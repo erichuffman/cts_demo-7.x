@@ -56,7 +56,7 @@
         <div class="clearfix" id="breadcrumb"><?php print $breadcrumb; ?></div>
       <?php endif; ?>
       
-      <div class="<?php print 'menu-' . $main_menu_location; ?> clearfix" id="content">
+      <div class="<?php if ($leprechaun_mascot != '') : print 'with-mascot '; endif; print 'menu-' . $main_menu_location; ?> clearfix" id="content">
         
         <?php
           // Check for tabs and content in page help region

@@ -17,6 +17,9 @@
   border-top: 1px solid #666;
   padding: 10px 0;
   text-align: center;
+  body.cts-skin-blue-diamonds & { border-color: $blue_diamonds; }
+  body.cts-skin-purple-horseshoes & { border-color: $purple_horseshoes; }
+  body.cts-skin-green-clovers & { border-color: $green_clovers; }
   .header__mdc-main-title { display: none; }
   .header__mdc-logo {
     margin: 0 auto;
@@ -26,6 +29,9 @@
   .header__territory-id { 
     font-size: 1.125rem;
     font-family: $roboto_slab_font;
+    body.cts-skin-blue-diamonds & { color: $blue_diamonds; }
+    body.cts-skin-purple-horseshoes & { color: $purple_horseshoes; }
+    body.cts-skin-green-clovers & { color: $green_clovers; }
   }
   .header__territory-id { font-size: 1rem; }
   @media only screen and (min-width: $tablet_max) {
@@ -49,27 +55,36 @@
 #footer { padding: 10px 0; }
 .header__top { padding: 5px 10px; }
 .breadcrumb {
-  background-color: $light_gray;
+  background-color: $dark_gray;
   padding-left: 10px;
   padding-right: 10px;
+  body.cts-skin-blue-diamonds & { background-color: $blue_diamonds; }
+  body.cts-skin-purple-horseshoes & { background-color: $purple_horseshoes; }
+  body.cts-skin-green-clovers & { background-color: $green_clovers; }
 }
 .header__top {
-  background-color: $light_gray;
+  background-color: $dark_gray;
   margin-bottom: 10px;
   min-height: 20px;
+  body.cts-skin-blue-diamonds & { background-color: $blue_diamonds; }
+  body.cts-skin-purple-horseshoes & { background-color: $purple_horseshoes; }
+  body.cts-skin-green-clovers & { background-color: $green_clovers; }
 }
 .main_content__leprechaun {
   background-position: right top;
   background-repeat: no-repeat;
-  min-height: 140px;
+  background-size: contain;
+  float: right;
+  min-height: 240px;
+  min-width: 240px;
   &.smiley { background-image: url('../images/leprechaun-mascot-smiley.png'); }
   &.surly { background-image: url('../images/leprechaun-mascot-surly.png'); }
   .menu-top &.surly { background-image: url('../images/leprechaun-mascot-surly-pissed.png'); }
   &.tipsy { background-image: url('../images/leprechaun-mascot-tipsy.png'); }
   .menu-sidebar & {
     background-position: center center;
-    background-size: contain;
-    float: right;
+    min-width: 25%;
+    min-height: auto;
     width: 25%;
   }
 }
@@ -81,8 +96,16 @@
 }
 .main_menu__sidebar {
   .menu-sidebar & {
+    clear: left;
     float: left;
     padding: 0 10px 10px 0;
+    width: 100%;
+    @media only screen and (min-width: $tablet_max) {
+      width: 15%;
+      padding-bottom: 0;
+    }
+  }
+  .with-mascot.menu-sidebar & {
     width: 75%;
     @media only screen and (min-width: $tablet_max) {
       width: 15%;
@@ -93,27 +116,31 @@
 .main_content__wrapper {
   .menu-sidebar & {
     float: left;
+    width: 100%;
+    @media only screen and (min-width: $tablet_max) { width: 85%; }
+  }
+  .with-mascot.menu-sidebar & {
     width: 75%;
     @media only screen and (min-width: $tablet_max) { width: 60%; }
   }
 }
 #footer {
   background-color: $mid_gray;
-  min-height: 40px;
+  min-height: 100px;
   & * {
     font-size: .7rem;
     text-align: center;
   }
   body.cts-skin-blue-diamonds & {
-    background: $blue_diamond url('../images/bg-tile-blue-diamond.png') no-repeat center 20px;
+    background: $blue_diamonds url('../images/bg-tile-blue-diamonds.png') no-repeat center 30px;
     & * { color: #fff; }
   }
   body.cts-skin-purple-horseshoes & {
-    background: $purple_horseshoes url('../images/bg-tile-purple-horseshoes.png') no-repeat center 20px;
+    background: $purple_horseshoes url('../images/bg-tile-purple-horseshoes.png') no-repeat center 30px;
     & * { color: #fff; }
   }
   body.cts-skin-green-clovers & {
-    background: $green_clovers url('../images/bg-tile-green-clovers.png') no-repeat center 20px;
+    background: $green_clovers url('../images/bg-tile-green-clovers.png') no-repeat center 30px;
     & * { color: #fff; }
   }
 }

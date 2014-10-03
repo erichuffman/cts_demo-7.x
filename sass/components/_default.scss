@@ -15,7 +15,7 @@ body {
   font: 400 87.5%/1.5 $roboto_font;
   position: relative;
   cursor: auto;
-  &.cts-skin-blue-diamonds { background-color: $blue_diamond; }
+  &.cts-skin-blue-diamonds { background-color: $blue_diamonds; }
   &.cts-skin-purple-horseshoes { background-color: $purple_horseshoes; }
   &.cts-skin-green-clovers { background-color: $green_clovers; }
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility;
-  body.cts-skin-blue-diamonds & { color: $blue_diamond; }
+  body.cts-skin-blue-diamonds & { color: $blue_diamonds; }
   body.cts-skin-purple-horseshoes & { color: $purple_horseshoes; }
   body.cts-skin-green-clovers & { color: $green_clovers; }
 }
@@ -153,3 +153,10 @@ blockquote {
     line-height: 1.6;
   }
 }
+
+/* Admin menu overrides */
+#admin-menu .dropdown li {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+#admin-menu > div > .dropdown > li > a { padding: 1px 8px; }

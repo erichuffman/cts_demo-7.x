@@ -315,6 +315,18 @@ blockquote p {
   line-height: 1.6;
 }
 
+/* Admin menu overrides */
+/* line 158, ../sass/components/_default.scss */
+#admin-menu .dropdown li {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+/* line 162, ../sass/components/_default.scss */
+#admin-menu > div > .dropdown > li > a {
+  padding: 1px 8px;
+}
+
 /* line 3, ../sass/components/_layout.scss */
 #skip-link {
   margin: 0;
@@ -346,21 +358,48 @@ blockquote p {
   text-align: center;
 }
 /* line 20, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds .header__main {
+  border-color: #0b5c94;
+}
+/* line 21, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes .header__main {
+  border-color: #4a306e;
+}
+/* line 22, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers .header__main {
+  border-color: #306e33;
+}
+/* line 23, ../sass/components/_layout.scss */
 .header__main .header__mdc-main-title {
   display: none;
 }
-/* line 21, ../sass/components/_layout.scss */
+/* line 24, ../sass/components/_layout.scss */
 .header__main .header__mdc-logo {
   margin: 0 auto;
   max-height: 80px;
 }
-/* line 26, ../sass/components/_layout.scss */
+/* line 29, ../sass/components/_layout.scss */
 .header__main .header__division-id,
 .header__main .header__territory-id {
   font-size: 1.125rem;
   font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-/* line 30, ../sass/components/_layout.scss */
+/* line 32, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds .header__main .header__division-id, body.cts-skin-blue-diamonds
+.header__main .header__territory-id {
+  color: #0b5c94;
+}
+/* line 33, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes .header__main .header__division-id, body.cts-skin-purple-horseshoes
+.header__main .header__territory-id {
+  color: #4a306e;
+}
+/* line 34, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers .header__main .header__division-id, body.cts-skin-green-clovers
+.header__main .header__territory-id {
+  color: #306e33;
+}
+/* line 36, ../sass/components/_layout.scss */
 .header__main .header__territory-id {
   font-size: 1rem;
 }
@@ -369,21 +408,21 @@ blockquote p {
   .header__main {
     text-align: left;
   }
-  /* line 33, ../sass/components/_layout.scss */
+  /* line 39, ../sass/components/_layout.scss */
   .header__main .header__mdc-logo {
     float: left;
     margin: 0;
     max-height: 120px;
     padding-right: 10px;
   }
-  /* line 39, ../sass/components/_layout.scss */
+  /* line 45, ../sass/components/_layout.scss */
   .header__main .header__division-id {
     font-size: 1.65rem;
     padding-top: 22px;
   }
 }
 
-/* line 49, ../sass/components/_layout.scss */
+/* line 55, ../sass/components/_layout.scss */
 .breadcrumb,
 #content,
 #support,
@@ -392,118 +431,167 @@ blockquote p {
   padding: 10px 0;
 }
 
-/* line 50, ../sass/components/_layout.scss */
+/* line 56, ../sass/components/_layout.scss */
 .header__top {
   padding: 5px 10px;
 }
 
-/* line 51, ../sass/components/_layout.scss */
+/* line 57, ../sass/components/_layout.scss */
 .breadcrumb {
-  background-color: whitesmoke;
+  background-color: #9c9c9c;
   padding-left: 10px;
   padding-right: 10px;
 }
+/* line 61, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds .breadcrumb {
+  background-color: #0b5c94;
+}
+/* line 62, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes .breadcrumb {
+  background-color: #4a306e;
+}
+/* line 63, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers .breadcrumb {
+  background-color: #306e33;
+}
 
-/* line 56, ../sass/components/_layout.scss */
+/* line 65, ../sass/components/_layout.scss */
 .header__top {
-  background-color: whitesmoke;
+  background-color: #9c9c9c;
   margin-bottom: 10px;
   min-height: 20px;
 }
+/* line 69, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds .header__top {
+  background-color: #0b5c94;
+}
+/* line 70, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes .header__top {
+  background-color: #4a306e;
+}
+/* line 71, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers .header__top {
+  background-color: #306e33;
+}
 
-/* line 61, ../sass/components/_layout.scss */
+/* line 73, ../sass/components/_layout.scss */
 .main_content__leprechaun {
   background-position: right top;
   background-repeat: no-repeat;
-  min-height: 140px;
+  background-size: contain;
+  float: right;
+  min-height: 240px;
+  min-width: 240px;
 }
-/* line 65, ../sass/components/_layout.scss */
+/* line 80, ../sass/components/_layout.scss */
 .main_content__leprechaun.smiley {
   background-image: url("../images/leprechaun-mascot-smiley.png");
 }
-/* line 66, ../sass/components/_layout.scss */
+/* line 81, ../sass/components/_layout.scss */
 .main_content__leprechaun.surly {
   background-image: url("../images/leprechaun-mascot-surly.png");
 }
-/* line 67, ../sass/components/_layout.scss */
+/* line 82, ../sass/components/_layout.scss */
 .menu-top .main_content__leprechaun.surly {
   background-image: url("../images/leprechaun-mascot-surly-pissed.png");
 }
-/* line 68, ../sass/components/_layout.scss */
+/* line 83, ../sass/components/_layout.scss */
 .main_content__leprechaun.tipsy {
   background-image: url("../images/leprechaun-mascot-tipsy.png");
 }
-/* line 69, ../sass/components/_layout.scss */
+/* line 84, ../sass/components/_layout.scss */
 .menu-sidebar .main_content__leprechaun {
   background-position: center center;
-  background-size: contain;
-  float: right;
+  min-width: 25%;
+  min-height: auto;
   width: 25%;
 }
 
-/* line 77, ../sass/components/_layout.scss */
+/* line 92, ../sass/components/_layout.scss */
 .menu-sidebar .main_content__page-title {
   float: left;
   width: 75%;
 }
 
-/* line 83, ../sass/components/_layout.scss */
+/* line 98, ../sass/components/_layout.scss */
 .menu-sidebar .main_menu__sidebar {
+  clear: left;
   float: left;
   padding: 0 10px 10px 0;
-  width: 75%;
+  width: 100%;
 }
 @media only screen and (min-width: 51em) {
-  /* line 83, ../sass/components/_layout.scss */
+  /* line 98, ../sass/components/_layout.scss */
   .menu-sidebar .main_menu__sidebar {
     width: 15%;
     padding-bottom: 0;
   }
 }
-
-/* line 94, ../sass/components/_layout.scss */
-.menu-sidebar .main_content__wrapper {
-  float: left;
+/* line 108, ../sass/components/_layout.scss */
+.with-mascot.menu-sidebar .main_menu__sidebar {
   width: 75%;
 }
 @media only screen and (min-width: 51em) {
-  /* line 94, ../sass/components/_layout.scss */
+  /* line 108, ../sass/components/_layout.scss */
+  .with-mascot.menu-sidebar .main_menu__sidebar {
+    width: 15%;
+    padding-bottom: 0;
+  }
+}
+
+/* line 117, ../sass/components/_layout.scss */
+.menu-sidebar .main_content__wrapper {
+  float: left;
+  width: 100%;
+}
+@media only screen and (min-width: 51em) {
+  /* line 117, ../sass/components/_layout.scss */
   .menu-sidebar .main_content__wrapper {
+    width: 85%;
+  }
+}
+/* line 122, ../sass/components/_layout.scss */
+.with-mascot.menu-sidebar .main_content__wrapper {
+  width: 75%;
+}
+@media only screen and (min-width: 51em) {
+  /* line 122, ../sass/components/_layout.scss */
+  .with-mascot.menu-sidebar .main_content__wrapper {
     width: 60%;
   }
 }
 
-/* line 100, ../sass/components/_layout.scss */
+/* line 127, ../sass/components/_layout.scss */
 #footer {
   background-color: #d1d1d1;
-  min-height: 40px;
+  min-height: 100px;
 }
-/* line 103, ../sass/components/_layout.scss */
+/* line 130, ../sass/components/_layout.scss */
 #footer * {
   font-size: .7rem;
   text-align: center;
 }
-/* line 107, ../sass/components/_layout.scss */
+/* line 134, ../sass/components/_layout.scss */
 body.cts-skin-blue-diamonds #footer {
-  background: #0b5c94 url("../images/bg-tile-blue-diamond.png") no-repeat center 20px;
+  background: #0b5c94 url("../images/bg-tile-blue-diamonds.png") no-repeat center 30px;
 }
-/* line 109, ../sass/components/_layout.scss */
+/* line 136, ../sass/components/_layout.scss */
 body.cts-skin-blue-diamonds #footer * {
   color: #fff;
 }
-/* line 111, ../sass/components/_layout.scss */
+/* line 138, ../sass/components/_layout.scss */
 body.cts-skin-purple-horseshoes #footer {
-  background: #4a306e url("../images/bg-tile-purple-horseshoes.png") no-repeat center 20px;
+  background: #4a306e url("../images/bg-tile-purple-horseshoes.png") no-repeat center 30px;
 }
-/* line 113, ../sass/components/_layout.scss */
+/* line 140, ../sass/components/_layout.scss */
 body.cts-skin-purple-horseshoes #footer * {
   color: #fff;
 }
-/* line 115, ../sass/components/_layout.scss */
+/* line 142, ../sass/components/_layout.scss */
 body.cts-skin-green-clovers #footer {
-  background: #306e33 url("../images/bg-tile-green-clovers.png") no-repeat center 20px;
+  background: #306e33 url("../images/bg-tile-green-clovers.png") no-repeat center 30px;
 }
-/* line 117, ../sass/components/_layout.scss */
+/* line 144, ../sass/components/_layout.scss */
 body.cts-skin-green-clovers #footer * {
   color: #fff;
 }
@@ -524,50 +612,70 @@ ul.inline li {
 }
 
 /* line 6, ../sass/components/_menus.scss */
-ul.inline li a {
+ul.links li a {
   display: inline-block;
   font-weight: 500;
   padding: 10px 20px;
 }
 /* line 10, ../sass/components/_menus.scss */
-ul.inline li a:link, ul.inline li a:visited {
+ul.links li a:link, ul.links li a:visited {
   color: #b84804;
 }
 
 /* Breadcrumb */
 /* line 14, ../sass/components/_menus.scss */
+.breadcrumb {
+  color: whitesmoke;
+}
+/* line 16, ../sass/components/_menus.scss */
 .breadcrumb a {
-  color: #9c9c9c;
+  color: whitesmoke;
+}
+/* line 17, ../sass/components/_menus.scss */
+.breadcrumb a:hover {
+  color: #fff;
 }
 
 /* Main Menu */
-/* line 20, ../sass/components/_menus.scss */
+/* line 23, ../sass/components/_menus.scss */
 #main-menu ul li.active a {
-  background: whitesmoke;
+  background-color: whitesmoke;
 }
-/* line 21, ../sass/components/_menus.scss */
+/* line 25, ../sass/components/_menus.scss */
+body.cts-skin-blue-diamonds #main-menu ul li.active a {
+  background-color: #e3f2fd;
+}
+/* line 26, ../sass/components/_menus.scss */
+body.cts-skin-purple-horseshoes #main-menu ul li.active a {
+  background-color: #efeaf6;
+}
+/* line 27, ../sass/components/_menus.scss */
+body.cts-skin-green-clovers #main-menu ul li.active a {
+  background-color: #eaf6ea;
+}
+/* line 29, ../sass/components/_menus.scss */
 .menu-sidebar #main-menu ul.links li a {
   display: block;
   padding: 10px;
 }
 
 /* Secondary links (top bar) */
-/* line 29, ../sass/components/_menus.scss */
+/* line 37, ../sass/components/_menus.scss */
 .header__secondary-menu ul.inline li {
   float: right;
 }
-/* line 30, ../sass/components/_menus.scss */
+/* line 38, ../sass/components/_menus.scss */
 .header__secondary-menu ul.inline li a {
   font-size: .8rem;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   padding: 3px 10px;
 }
-/* line 35, ../sass/components/_menus.scss */
+/* line 43, ../sass/components/_menus.scss */
 .header__secondary-menu ul.inline li a:link, .header__secondary-menu ul.inline li a:visited {
-  color: #9c9c9c;
+  color: whitesmoke;
 }
-/* line 36, ../sass/components/_menus.scss */
+/* line 44, ../sass/components/_menus.scss */
 .header__secondary-menu ul.inline li a:hover, .header__secondary-menu ul.inline li a:active {
-  color: #000;
+  color: #fff;
 }
