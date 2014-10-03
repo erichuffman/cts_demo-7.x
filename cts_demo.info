@@ -1,0 +1,51 @@
+screenshot  = screenshot.png
+name = Custom Theme Settings Demo Theme
+description =  A theme for demonstrating how to configure some basic custom theme settings.
+core = 7.x
+
+stylesheets[screen][] = css/cts_demo_default.css
+stylesheets[screen][] = css/cts_demo_base.css
+
+scripts[] = js/cts_demo.js
+
+regions[help] = Help
+regions[content] = Main Content
+regions[footer] = Footer
+
+// ##
+// Drupal default features and settings:
+// Keeping logo, and favicon features enabled to avoid error file upload messages,
+// but hiding the defaults via CSS
+// ##
+features[] = logo
+//features[] = name
+//features[] = slogan
+//features[] = node_user_picture
+//features[] = comment_user_picture
+//features[] = comment_user_verification
+features[] = favicon
+//features[] = main_menu
+//features[] = secondary_menu
+settings[toggle_logo] = 1
+//settings[toggle_name] = 0
+//settings[toggle_slogan] = 0
+//settings[toggle_node_user_picture] = 1
+//settings[toggle_comment_user_picture] = 1
+//settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+//settings[toggle_main_menu] = 1
+//settings[toggle_secondary_menu] = 1
+// ##
+
+// ##
+// Theme settings defaults
+// ##
+settings[site_skin] = blue-diamonds
+settings[division_id] = Customer Support
+settings[territory_id] = SE United States
+settings[main_menu_location] = top
+settings[leprechaun_mascot] = 0
+settings[leprechaun_mascot_style] = happy
+// ##
+
+version = "7.x-1.0"

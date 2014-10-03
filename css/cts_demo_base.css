@@ -1,0 +1,288 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/components/_default.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/components/_default.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../sass/components/_default.scss */
+body {
+  background: white;
+  color: #222222;
+  font: 400 87.5%/1.5 "Trebuchet MS", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  position: relative;
+  cursor: auto;
+}
+
+/* line 20, ../sass/components/_default.scss */
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+/* line 24, ../sass/components/_default.scss */
+a:hover, a:focus {
+  color: #258faf;
+  cursor: pointer;
+}
+/* line 28, ../sass/components/_default.scss */
+a img {
+  border: none;
+}
+
+/* line 31, ../sass/components/_default.scss */
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Default paragraph styles */
+/* line 39, ../sass/components/_default.scss */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+/* Default header styles */
+/* line 47, ../sass/components/_default.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 53, ../sass/components/_default.scss */
+h1 {
+  font-size: 2.125rem;
+}
+
+/* line 54, ../sass/components/_default.scss */
+h2 {
+  font-size: 1.6875rem;
+}
+
+/* line 55, ../sass/components/_default.scss */
+h3 {
+  font-size: 1.375rem;
+}
+
+/* line 56, ../sass/components/_default.scss */
+h4 {
+  font-size: 1.125rem;
+}
+
+/* line 57, ../sass/components/_default.scss */
+h5 {
+  font-size: 1.125rem;
+}
+
+/* line 58, ../sass/components/_default.scss */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 60, ../sass/components/_default.scss */
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 1.25rem 0 1.1875rem;
+}
+
+/* Helpful Typography Defaults */
+/* line 70, ../sass/components/_default.scss */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 76, ../sass/components/_default.scss */
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 81, ../sass/components/_default.scss */
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+/* Lists */
+/* line 89, ../sass/components/_default.scss */
+ul,
+ol,
+dl {
+  font-size: 1rem;
+  line-height: 1.6;
+  list-style-position: outside;
+  margin-bottom: 1.25rem;
+}
+
+/* Unordered Lists */
+/* line 97, ../sass/components/_default.scss */
+ul {
+  margin-left: 1.1rem;
+}
+
+/* line 99, ../sass/components/_default.scss */
+ul li ul,
+ul li ol {
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+}
+
+/* Ordered Lists */
+/* line 105, ../sass/components/_default.scss */
+ol {
+  margin-left: 1.4rem;
+}
+
+/* line 107, ../sass/components/_default.scss */
+ol li ul,
+ol li ol {
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+}
+
+/* Definition Lists */
+/* line 113, ../sass/components/_default.scss */
+dl dt {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+/* line 117, ../sass/components/_default.scss */
+dl dd {
+  margin-bottom: 0.75rem;
+}
+
+/* Abbreviations */
+/* line 121, ../sass/components/_default.scss */
+abbr,
+acronym {
+  color: #222222;
+  cursor: help;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 128, ../sass/components/_default.scss */
+abbr {
+  text-transform: none;
+}
+/* line 129, ../sass/components/_default.scss */
+abbr[title] {
+  border-bottom: 1px dotted #dddddd;
+}
+
+/* Blockquotes */
+/* line 133, ../sass/components/_default.scss */
+blockquote {
+  margin: 0 0 1.25rem;
+  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  border-left: 1px solid #dddddd;
+}
+/* line 137, ../sass/components/_default.scss */
+blockquote cite {
+  display: block;
+  font-size: 0.8125rem;
+  color: #555555;
+}
+/* line 141, ../sass/components/_default.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 142, ../sass/components/_default.scss */
+blockquote cite a, blockquote cite a:visited {
+  color: #555555;
+}
+/* line 144, ../sass/components/_default.scss */
+blockquote p {
+  color: #6f6f6f;
+  line-height: 1.6;
+}
