@@ -2,6 +2,9 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* graytones */
+/* Menus */
+/* Background skins */
 /* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,30 +86,42 @@ html, body {
 
 /* line 12, ../sass/components/_default.scss */
 body {
-  background: white;
+  background-color: #d1d1d1;
   color: #222222;
-  font: 400 87.5%/1.5 "Trebuchet MS", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 400 87.5%/1.5 "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   position: relative;
   cursor: auto;
 }
-
+/* line 18, ../sass/components/_default.scss */
+body.cts-skin-blue-diamonds {
+  background-color: #0b5c94;
+}
+/* line 19, ../sass/components/_default.scss */
+body.cts-skin-purple-horseshoes {
+  background-color: #4a306e;
+}
 /* line 20, ../sass/components/_default.scss */
+body.cts-skin-green-clovers {
+  background-color: #306e33;
+}
+
+/* line 23, ../sass/components/_default.scss */
 a {
   color: #2ba6cb;
   text-decoration: none;
   line-height: inherit;
 }
-/* line 24, ../sass/components/_default.scss */
+/* line 27, ../sass/components/_default.scss */
 a:hover, a:focus {
   color: #258faf;
   cursor: pointer;
 }
-/* line 28, ../sass/components/_default.scss */
+/* line 31, ../sass/components/_default.scss */
 a img {
   border: none;
 }
 
-/* line 31, ../sass/components/_default.scss */
+/* line 34, ../sass/components/_default.scss */
 img {
   display: inline-block;
   height: auto;
@@ -115,7 +130,7 @@ img {
 }
 
 /* Default paragraph styles */
-/* line 39, ../sass/components/_default.scss */
+/* line 42, ../sass/components/_default.scss */
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -124,45 +139,58 @@ p {
 }
 
 /* Default header styles */
-/* line 47, ../sass/components/_default.scss */
+/* line 50, ../sass/components/_default.scss */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility;
 }
+/* line 56, ../sass/components/_default.scss */
+body.cts-skin-blue-diamonds h1, body.cts-skin-blue-diamonds h2, body.cts-skin-blue-diamonds h3, body.cts-skin-blue-diamonds h4, body.cts-skin-blue-diamonds h5, body.cts-skin-blue-diamonds h6 {
+  color: #0b5c94;
+}
+/* line 57, ../sass/components/_default.scss */
+body.cts-skin-purple-horseshoes h1, body.cts-skin-purple-horseshoes h2, body.cts-skin-purple-horseshoes h3, body.cts-skin-purple-horseshoes h4, body.cts-skin-purple-horseshoes h5, body.cts-skin-purple-horseshoes h6 {
+  color: #4a306e;
+}
+/* line 58, ../sass/components/_default.scss */
+body.cts-skin-green-clovers h1, body.cts-skin-green-clovers h2, body.cts-skin-green-clovers h3, body.cts-skin-green-clovers h4, body.cts-skin-green-clovers h5, body.cts-skin-green-clovers h6 {
+  color: #306e33;
+}
 
-/* line 53, ../sass/components/_default.scss */
+/* line 60, ../sass/components/_default.scss */
 h1 {
   font-size: 2.125rem;
 }
 
-/* line 54, ../sass/components/_default.scss */
+/* line 61, ../sass/components/_default.scss */
 h2 {
   font-size: 1.6875rem;
 }
 
-/* line 55, ../sass/components/_default.scss */
+/* line 62, ../sass/components/_default.scss */
 h3 {
   font-size: 1.375rem;
 }
 
-/* line 56, ../sass/components/_default.scss */
+/* line 63, ../sass/components/_default.scss */
 h4 {
   font-size: 1.125rem;
 }
 
-/* line 57, ../sass/components/_default.scss */
+/* line 64, ../sass/components/_default.scss */
 h5 {
   font-size: 1.125rem;
 }
 
-/* line 58, ../sass/components/_default.scss */
+/* line 65, ../sass/components/_default.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 60, ../sass/components/_default.scss */
+/* line 67, ../sass/components/_default.scss */
 hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
@@ -172,28 +200,28 @@ hr {
 }
 
 /* Helpful Typography Defaults */
-/* line 70, ../sass/components/_default.scss */
+/* line 77, ../sass/components/_default.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit;
 }
 
-/* line 76, ../sass/components/_default.scss */
+/* line 83, ../sass/components/_default.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit;
 }
 
-/* line 81, ../sass/components/_default.scss */
+/* line 88, ../sass/components/_default.scss */
 small {
   font-size: 60%;
   line-height: inherit;
 }
 
 /* Lists */
-/* line 89, ../sass/components/_default.scss */
+/* line 96, ../sass/components/_default.scss */
 ul,
 ol,
 dl {
@@ -204,12 +232,12 @@ dl {
 }
 
 /* Unordered Lists */
-/* line 97, ../sass/components/_default.scss */
+/* line 104, ../sass/components/_default.scss */
 ul {
   margin-left: 1.1rem;
 }
 
-/* line 99, ../sass/components/_default.scss */
+/* line 106, ../sass/components/_default.scss */
 ul li ul,
 ul li ol {
   margin-bottom: 0;
@@ -217,12 +245,12 @@ ul li ol {
 }
 
 /* Ordered Lists */
-/* line 105, ../sass/components/_default.scss */
+/* line 112, ../sass/components/_default.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 107, ../sass/components/_default.scss */
+/* line 114, ../sass/components/_default.scss */
 ol li ul,
 ol li ol {
   margin-bottom: 0;
@@ -230,19 +258,19 @@ ol li ol {
 }
 
 /* Definition Lists */
-/* line 113, ../sass/components/_default.scss */
+/* line 120, ../sass/components/_default.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
 
-/* line 117, ../sass/components/_default.scss */
+/* line 124, ../sass/components/_default.scss */
 dl dd {
   margin-bottom: 0.75rem;
 }
 
 /* Abbreviations */
-/* line 121, ../sass/components/_default.scss */
+/* line 128, ../sass/components/_default.scss */
 abbr,
 acronym {
   color: #222222;
@@ -251,38 +279,295 @@ acronym {
   text-transform: uppercase;
 }
 
-/* line 128, ../sass/components/_default.scss */
+/* line 135, ../sass/components/_default.scss */
 abbr {
   text-transform: none;
 }
-/* line 129, ../sass/components/_default.scss */
+/* line 136, ../sass/components/_default.scss */
 abbr[title] {
   border-bottom: 1px dotted #dddddd;
 }
 
 /* Blockquotes */
-/* line 133, ../sass/components/_default.scss */
+/* line 140, ../sass/components/_default.scss */
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd;
 }
-/* line 137, ../sass/components/_default.scss */
+/* line 144, ../sass/components/_default.scss */
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
   color: #555555;
 }
-/* line 141, ../sass/components/_default.scss */
+/* line 148, ../sass/components/_default.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
-/* line 142, ../sass/components/_default.scss */
+/* line 149, ../sass/components/_default.scss */
 blockquote cite a, blockquote cite a:visited {
   color: #555555;
 }
-/* line 144, ../sass/components/_default.scss */
+/* line 151, ../sass/components/_default.scss */
 blockquote p {
   color: #6f6f6f;
   line-height: 1.6;
+}
+
+/* line 3, ../sass/components/_layout.scss */
+#skip-link {
+  margin: 0;
+}
+
+/* line 6, ../sass/components/_layout.scss */
+#page {
+  background-color: #fff;
+}
+
+/* line 7, ../sass/components/_layout.scss */
+#page-header, #main {
+  background-color: #fff;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 51em) {
+  /* line 7, ../sass/components/_layout.scss */
+  #page-header, #main {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
+
+/* line 15, ../sass/components/_layout.scss */
+.header__main {
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 10px 0;
+  text-align: center;
+}
+/* line 20, ../sass/components/_layout.scss */
+.header__main .header__mdc-main-title {
+  display: none;
+}
+/* line 21, ../sass/components/_layout.scss */
+.header__main .header__mdc-logo {
+  margin: 0 auto;
+  max-height: 80px;
+}
+/* line 26, ../sass/components/_layout.scss */
+.header__main .header__division-id,
+.header__main .header__territory-id {
+  font-size: 1.125rem;
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+/* line 30, ../sass/components/_layout.scss */
+.header__main .header__territory-id {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 51em) {
+  /* line 15, ../sass/components/_layout.scss */
+  .header__main {
+    text-align: left;
+  }
+  /* line 33, ../sass/components/_layout.scss */
+  .header__main .header__mdc-logo {
+    float: left;
+    margin: 0;
+    max-height: 120px;
+    padding-right: 10px;
+  }
+  /* line 39, ../sass/components/_layout.scss */
+  .header__main .header__division-id {
+    font-size: 1.65rem;
+    padding-top: 22px;
+  }
+}
+
+/* line 49, ../sass/components/_layout.scss */
+.breadcrumb,
+#content,
+#support,
+.main_content__page-title,
+#footer {
+  padding: 10px 0;
+}
+
+/* line 50, ../sass/components/_layout.scss */
+.header__top {
+  padding: 5px 10px;
+}
+
+/* line 51, ../sass/components/_layout.scss */
+.breadcrumb {
+  background-color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 56, ../sass/components/_layout.scss */
+.header__top {
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+/* line 61, ../sass/components/_layout.scss */
+.main_content__leprechaun {
+  background-position: right top;
+  background-repeat: no-repeat;
+  min-height: 140px;
+}
+/* line 65, ../sass/components/_layout.scss */
+.main_content__leprechaun.smiley {
+  background-image: url("../images/leprechaun-mascot-smiley.png");
+}
+/* line 66, ../sass/components/_layout.scss */
+.main_content__leprechaun.surly {
+  background-image: url("../images/leprechaun-mascot-surly.png");
+}
+/* line 67, ../sass/components/_layout.scss */
+.menu-top .main_content__leprechaun.surly {
+  background-image: url("../images/leprechaun-mascot-surly-pissed.png");
+}
+/* line 68, ../sass/components/_layout.scss */
+.main_content__leprechaun.tipsy {
+  background-image: url("../images/leprechaun-mascot-tipsy.png");
+}
+/* line 69, ../sass/components/_layout.scss */
+.menu-sidebar .main_content__leprechaun {
+  background-position: center center;
+  background-size: contain;
+  float: right;
+  width: 25%;
+}
+
+/* line 77, ../sass/components/_layout.scss */
+.menu-sidebar .main_content__page-title {
+  float: left;
+  width: 75%;
+}
+
+/* line 83, ../sass/components/_layout.scss */
+.menu-sidebar .main_menu__sidebar {
+  float: left;
+  padding: 0 10px 10px 0;
+  width: 75%;
+}
+@media only screen and (min-width: 51em) {
+  /* line 83, ../sass/components/_layout.scss */
+  .menu-sidebar .main_menu__sidebar {
+    width: 15%;
+    padding-bottom: 0;
+  }
+}
+
+/* line 94, ../sass/components/_layout.scss */
+.menu-sidebar .main_content__wrapper {
+  float: left;
+  width: 75%;
+}
+@media only screen and (min-width: 51em) {
+  /* line 94, ../sass/components/_layout.scss */
+  .menu-sidebar .main_content__wrapper {
+    width: 60%;
+  }
+}
+
+/* line 100, ../sass/components/_layout.scss */
+#footer {
+  background-color: #d1d1d1;
+  min-height: 40px;
+}
+/* line 103, ../sass/components/_layout.scss */
+#footer * {
+  font-size: .7rem;
+  text-align: center;
+}
+/* line 107, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds #footer {
+  background: #0b5c94 url("../images/bg-tile-blue-diamond.png") no-repeat center 20px;
+}
+/* line 109, ../sass/components/_layout.scss */
+body.cts-skin-blue-diamonds #footer * {
+  color: #fff;
+}
+/* line 111, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes #footer {
+  background: #4a306e url("../images/bg-tile-purple-horseshoes.png") no-repeat center 20px;
+}
+/* line 113, ../sass/components/_layout.scss */
+body.cts-skin-purple-horseshoes #footer * {
+  color: #fff;
+}
+/* line 115, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers #footer {
+  background: #306e33 url("../images/bg-tile-green-clovers.png") no-repeat center 20px;
+}
+/* line 117, ../sass/components/_layout.scss */
+body.cts-skin-green-clovers #footer * {
+  color: #fff;
+}
+
+/* line 3, ../sass/components/_menus.scss */
+ul.links {
+  margin: 0;
+}
+
+/* line 4, ../sass/components/_menus.scss */
+ul.links li a {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 5, ../sass/components/_menus.scss */
+ul.inline li {
+  padding: 0;
+}
+
+/* line 6, ../sass/components/_menus.scss */
+ul.inline li a {
+  display: inline-block;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+/* line 10, ../sass/components/_menus.scss */
+ul.inline li a:link, ul.inline li a:visited {
+  color: #b84804;
+}
+
+/* Breadcrumb */
+/* line 14, ../sass/components/_menus.scss */
+.breadcrumb a {
+  color: #9c9c9c;
+}
+
+/* Main Menu */
+/* line 20, ../sass/components/_menus.scss */
+#main-menu ul li.active a {
+  background: whitesmoke;
+}
+/* line 21, ../sass/components/_menus.scss */
+.menu-sidebar #main-menu ul.links li a {
+  display: block;
+  padding: 10px;
+}
+
+/* Secondary links (top bar) */
+/* line 29, ../sass/components/_menus.scss */
+.header__secondary-menu ul.inline li {
+  float: right;
+}
+/* line 30, ../sass/components/_menus.scss */
+.header__secondary-menu ul.inline li a {
+  font-size: .8rem;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  padding: 3px 10px;
+}
+/* line 35, ../sass/components/_menus.scss */
+.header__secondary-menu ul.inline li a:link, .header__secondary-menu ul.inline li a:visited {
+  color: #9c9c9c;
+}
+/* line 36, ../sass/components/_menus.scss */
+.header__secondary-menu ul.inline li a:hover, .header__secondary-menu ul.inline li a:active {
+  color: #000;
 }

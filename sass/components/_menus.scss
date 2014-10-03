@@ -1,0 +1,39 @@
+// Menu styling
+
+ul.links { margin: 0; }
+ul.links li a { font-family: $roboto_slab_font; }
+ul.inline li { padding: 0; }
+ul.inline li a {
+  display: inline-block;
+  font-weight: 500;
+  padding: 10px 20px;
+  &:link, &:visited { color: $main_menu_link; } 
+}
+
+/* Breadcrumb */
+.breadcrumb a {
+  color: $dark_gray;
+}
+
+/* Main Menu */
+#main-menu {
+  ul li.active a { background: $light_gray; }
+  .menu-sidebar & ul.links li a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* Secondary links (top bar) */
+.header__secondary-menu {
+  ul.inline li { float: right; }
+  ul.inline li a {
+    font-size: .8rem;
+    font-family: $roboto_font;
+    font-weight: 300;
+    padding: 3px 10px;
+    &:link, &:visited { color: $dark_gray; } 
+    &:hover, &:active { color: #000; } 
+  }
+
+}

@@ -28,16 +28,14 @@
       <section class="header__top clearfix">
         <?php if ($secondary_menu): ?>
           <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-            <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
+            <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('links', 'inline', 'clearfix')))); ?>
           </nav>
         <?php endif; ?>
       </section>
       
       <section class="header__main clearfix" id="identity">
-        <h1 class="header__mdc-logo">
-          <a href="<?php print $front_page; ?>" title="Magically Delicious Corp"><img src="<?php print $cts_demo_theme_path; ?>/images/primary-mdc-logo.png" alt="Magically Delicious Corp" /></a>
-          Magically Delicious Corp
-        </h1>
+        <a href="<?php print $front_page; ?>" title="Magically Delicious Corp"><img class="header__mdc-logo" src="<?php print $cts_demo_theme_path; ?>/images/primary-mdc-logo.png" alt="Magically Delicious Corp" /></a>
+        <h1 class="header__mdc-main-title">Magically Delicious Corp</h1>
         <?php if ($division_id != '') : ?>
           <div class="header__division-id"><?php print $division_id; ?></div>
           <div class="header__territory-id"><?php print $territory_id; ?></div>
@@ -50,7 +48,7 @@
       
       <?php if ($main_menu && $main_menu_location == 'top'): ?>
         <nav class="main_menu__top clearfix" id="main-menu" role="navigation">
-          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
+          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
         </nav>
       <?php endif; ?>
       
@@ -58,7 +56,7 @@
         <div class="clearfix" id="breadcrumb"><?php print $breadcrumb; ?></div>
       <?php endif; ?>
       
-      <div class="clearfix" id="content">
+      <div class="<?php print 'menu-' . $main_menu_location; ?> clearfix" id="content">
         
         <?php
           // Check for tabs and content in page help region
@@ -93,7 +91,7 @@
         
         <?php if ($main_menu && $main_menu_location == 'sidebar'): ?>
           <nav class="main_menu__sidebar" id="main-menu" role="navigation">
-            <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links')), 'heading' => t('Main menu'))); ?>
+            <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links')))); ?>
           </nav>
         <?php endif; ?>
         
@@ -107,11 +105,11 @@
         
       </div><!-- /#content -->
     
-    <div><!-- /#main -->
+    </div><!-- /#main -->
     
     <div id="footer">
       <?php print render($page['footer']); ?>
     </div><!-- /#footer -->
     
-  <div><!-- /#page -->
+  </div><!-- /#page -->
     

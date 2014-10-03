@@ -1,2 +1,121 @@
 // Basic layout structure
 
+#skip-link { 
+  margin: 0;
+}
+#page { background-color: #fff; }
+#page-header, #main {
+  background-color: #fff;
+  padding: 0 10px;
+  @media only screen and (min-width: $tablet_max) {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
+.header__main {
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  padding: 10px 0;
+  text-align: center;
+  .header__mdc-main-title { display: none; }
+  .header__mdc-logo {
+    margin: 0 auto;
+    max-height: 80px;
+  }
+  .header__division-id,
+  .header__territory-id { 
+    font-size: 1.125rem;
+    font-family: $roboto_slab_font;
+  }
+  .header__territory-id { font-size: 1rem; }
+  @media only screen and (min-width: $tablet_max) {
+    text-align: left;
+    .header__mdc-logo { 
+      float: left;
+      margin: 0;
+      max-height: 120px;
+      padding-right: 10px;
+    }
+    .header__division-id {
+      font-size: 1.65rem;
+      padding-top: 22px;
+    }
+  }
+}
+.breadcrumb,
+#content,
+#support,
+.main_content__page-title,
+#footer { padding: 10px 0; }
+.header__top { padding: 5px 10px; }
+.breadcrumb {
+  background-color: $light_gray;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header__top {
+  background-color: $light_gray;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+.main_content__leprechaun {
+  background-position: right top;
+  background-repeat: no-repeat;
+  min-height: 140px;
+  &.smiley { background-image: url('../images/leprechaun-mascot-smiley.png'); }
+  &.surly { background-image: url('../images/leprechaun-mascot-surly.png'); }
+  .menu-top &.surly { background-image: url('../images/leprechaun-mascot-surly-pissed.png'); }
+  &.tipsy { background-image: url('../images/leprechaun-mascot-tipsy.png'); }
+  .menu-sidebar & {
+    background-position: center center;
+    background-size: contain;
+    float: right;
+    width: 25%;
+  }
+}
+.main_content__page-title {
+  .menu-sidebar & {
+    float: left;
+    width: 75%;
+  }
+}
+.main_menu__sidebar {
+  .menu-sidebar & {
+    float: left;
+    padding: 0 10px 10px 0;
+    width: 75%;
+    @media only screen and (min-width: $tablet_max) {
+      width: 15%;
+      padding-bottom: 0;
+    }
+  }
+}
+.main_content__wrapper {
+  .menu-sidebar & {
+    float: left;
+    width: 75%;
+    @media only screen and (min-width: $tablet_max) { width: 60%; }
+  }
+}
+#footer {
+  background-color: $mid_gray;
+  min-height: 40px;
+  & * {
+    font-size: .7rem;
+    text-align: center;
+  }
+  body.cts-skin-blue-diamonds & {
+    background: $blue_diamond url('../images/bg-tile-blue-diamond.png') no-repeat center 20px;
+    & * { color: #fff; }
+  }
+  body.cts-skin-purple-horseshoes & {
+    background: $purple_horseshoes url('../images/bg-tile-purple-horseshoes.png') no-repeat center 20px;
+    & * { color: #fff; }
+  }
+  body.cts-skin-green-clovers & {
+    background: $green_clovers url('../images/bg-tile-green-clovers.png') no-repeat center 20px;
+    & * { color: #fff; }
+  }
+}
+
+

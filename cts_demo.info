@@ -12,40 +12,39 @@ regions[help] = Help
 regions[content] = Main Content
 regions[footer] = Footer
 
-// ##
-// Drupal default features and settings:
-// Keeping logo, and favicon features enabled to avoid error file upload messages,
-// but hiding the defaults via CSS
-// ##
-features[] = logo
+// Drupal default features and settings are listed below, but commented out.
+// This will result in all of the default features and settings showing up on the
+// theme settings page for this theme. If you enabled just one of the features,
+// then only that one would show up. However, since disabling the logo, or favicon feature 
+// causes an error (this is a bug in Drupal, which can be patched
+// see: https://www.drupal.org/node/1149900) we'll instead let all of the features load, 
+// but we'll hide them with CSS (see the theme-settings.php file.)
+// 
+//features[] = logo
 //features[] = name
 //features[] = slogan
 //features[] = node_user_picture
 //features[] = comment_user_picture
 //features[] = comment_user_verification
-features[] = favicon
+//features[] = favicon
 //features[] = main_menu
 //features[] = secondary_menu
-settings[toggle_logo] = 1
+//settings[toggle_logo] = 1
 //settings[toggle_name] = 0
 //settings[toggle_slogan] = 0
 //settings[toggle_node_user_picture] = 1
 //settings[toggle_comment_user_picture] = 1
 //settings[toggle_comment_user_verification] = 1
-settings[toggle_favicon] = 1
+//settings[toggle_favicon] = 1
 //settings[toggle_main_menu] = 1
 //settings[toggle_secondary_menu] = 1
-// ##
 
-// ##
-// Theme settings defaults
-// ##
-settings[site_skin] = blue-diamonds
-settings[division_id] = Customer Support
-settings[territory_id] = SE United States
-settings[main_menu_location] = top
+// Below is where I'm setting the defaults for the custom settings I'm adding to this theme. 
+settings[site_flavor] = blue-diamonds
+settings[division_id] = 0
+settings[territory_id] = 0
+settings[main_menu_location] = 0
 settings[leprechaun_mascot] = 0
-settings[leprechaun_mascot_style] = happy
-// ##
+settings[leprechaun_mascot_style] = Smiley McSmiles
 
 version = "7.x-1.0"
