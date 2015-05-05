@@ -7,7 +7,7 @@
 #page-header, #main {
   background-color: #fff;
   padding: 0 10px;
-  @media only screen and (min-width: $tablet_max) {
+  @include breakpoint( $tablet_max) {
     margin: 0 auto;
     max-width: 75%;
   }
@@ -34,7 +34,7 @@
     body.cts-skin-green-clovers & { color: $green_clovers; }
   }
   .header__territory-id { font-size: 1rem; }
-  @media only screen and (min-width: $tablet_max) {
+  @include breakpoint($tablet_max) {
     text-align: left;
     .header__mdc-logo { 
       float: left;
@@ -100,14 +100,14 @@
     float: left;
     padding: 0 10px 10px 0;
     width: 100%;
-    @media only screen and (min-width: $tablet_max) {
+    @include breakpoint($tablet_max) {
       width: 15%;
       padding-bottom: 0;
     }
   }
   .with-mascot.menu-sidebar & {
     width: 75%;
-    @media only screen and (min-width: $tablet_max) {
+    @include breakpoint($tablet_max) {
       width: 15%;
       padding-bottom: 0;
     }
@@ -117,11 +117,11 @@
   .menu-sidebar & {
     float: left;
     width: 100%;
-    @media only screen and (min-width: $tablet_max) { width: 85%; }
+    @include breakpoint( $tablet_max) { width: 85%; }
   }
   .with-mascot.menu-sidebar & {
     width: 75%;
-    @media only screen and (min-width: $tablet_max) { width: 60%; }
+    @include breakpoint( $tablet_max) { width: 60%; }
   }
 }
 #footer {
