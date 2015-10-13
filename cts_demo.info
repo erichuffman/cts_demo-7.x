@@ -3,10 +3,7 @@ name = Custom Theme Settings Demo Theme
 description =  A theme for demonstrating how to configure some basic custom theme settings.
 core = 7.x
 
-stylesheets[screen][] = css/cts_demo_default.css
-stylesheets[screen][] = css/cts_demo_base.css
-
-scripts[] = js/cts_demo.js
+stylesheets[screen][] = css/cts-demo.main.base.css
 
 regions[help] = Help
 regions[content] = Main Content
@@ -15,11 +12,11 @@ regions[footer] = Footer
 // Drupal default features and settings are listed below, but commented out.
 // This will result in all of the default features and settings showing up on the
 // theme settings page for this theme. If you enabled just one of the features,
-// then only that one would show up. However, since disabling the logo, or favicon feature 
+// then only that one would show up. However, since disabling the logo, or favicon feature
 // causes an error (this is a bug in Drupal, which can be patched
-// see: https://www.drupal.org/node/1149900) we'll instead let all of the features load, 
+// see: https://www.drupal.org/node/1149900) we'll instead let all of the features load,
 // but we'll hide them with CSS (see the theme-settings.php file.)
-// 
+//
 //features[] = logo
 //features[] = name
 //features[] = slogan
@@ -39,7 +36,7 @@ regions[footer] = Footer
 //settings[toggle_main_menu] = 1
 //settings[toggle_secondary_menu] = 1
 
-// Below is where I'm setting the defaults for the custom settings I'm adding to this theme. 
+// Below is where I'm setting the defaults for the custom settings I'm adding to this theme.
 settings[site_flavor] = blue-diamonds
 settings[division_id] = 0
 settings[territory_id] = 0

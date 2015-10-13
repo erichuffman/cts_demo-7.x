@@ -1,0 +1,28 @@
+// Default styling for lists
+
+ul,
+ol,
+dl {
+  margin: 0 0 1rem;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1rem;
+}
+
+li {
+  margin: 0.5rem 0;
+
+  li {
+    margin: 0;
+  }
+}

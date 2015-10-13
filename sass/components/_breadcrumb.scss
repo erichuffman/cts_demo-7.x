@@ -1,0 +1,13 @@
+// Styling for the breadcrumb
+
+.breadcrumb a {
+  color: $color-dk-gray;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover { color: $color-body-gray; }
+}
+
+.breadcrumb__wrapper {
+  padding: 1rem 0;
+}

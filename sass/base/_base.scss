@@ -1,0 +1,43 @@
+// Base element styling
+
+html {
+  box-sizing: border-box;
+  font-family: $font-stack-base;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 87.5%;
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $color-body-gray;
+  cursor: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &.cts-skin-blue-diamonds { background-color: $color-blue-diamonds; }
+  &.cts-skin-purple-horseshoes { background-color: $color-purple-horseshoes; }
+  &.cts-skin-green-clovers { background-color: $color-green-clovers; }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
