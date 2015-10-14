@@ -36,12 +36,7 @@
     </section>
   </header>
   <div id="content" class="content clearfix">
-    <div class="content__container">
-      <?php if ($main_menu && $main_menu_location == 'top'): ?>
-        <nav class="main-menu--top clearfix" role="navigation">
-          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
-        </nav>
-      <?php endif; ?>
+    <div class="content__container <?php print 'main-menu-' . $main_menu_location; ?>">
       <?php
         // Check for tabs and content in page help region
         $page_help = render($page['help']);
@@ -69,6 +64,11 @@
           <?php endif; ?>
         </div>
       <?php endif; ?>
+      <?php if ($main_menu && $main_menu_location == 'top'): ?>
+        <nav class="main-menu--top clearfix" role="navigation">
+          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
+        </nav>
+      <?php endif; ?>
       <div class="content__main"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
@@ -83,9 +83,9 @@
             <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links')))); ?>
           </nav>
         <?php endif; ?>
-        <div class="content__body-wrapper<?php if ($main_menu && $main_menu_location == 'sidebar') { print '--menu-left'; } ?>">
+        <div class="content__body-wrapper<?php if ($main_menu && $main_menu_location == 'sidebar') { print '--menu-' . $main_menu_location; } ?>">
           <?php if ($leprechaun_mascot) : ?>
-            <div class="leprechaun"></div>
+            <div class="leprechaun--<?php print $leprechaun_mascot_style; ?>"></div>
           <?php endif; ?>
           <?php print render($page['content']); ?>
         </div>
@@ -97,6 +97,7 @@
   </div><!-- /.content -->
   <div class="footer">
     <?php print render($page['footer']); ?>
+    <p class="footer__copyright">Copyright Magically Delicious Corporation</p>
   </div><!-- /.footer -->
  </div><!-- /.page -->
 

@@ -3,7 +3,7 @@
 .main-menu--sidebar {
   @include breakpoint($bp-md) {
     float: left;
-    width: 20%;
+    width: 15%;
   }
 }
 
@@ -21,25 +21,64 @@
   }
 
   ul.links li a {
-    border-left: 0.25rem solid $color-mid-gray;
+    border-left: 0.25rem solid $color-dk-gray;
     display: block;
     font-size: 1.25rem;
     font-weight: $font-weight-bold;
-    padding: 0.25rem 0 0.25rem 1.5rem;
+    padding: 0.25rem 0 0.25rem 1.25rem;
 
     &:link,
     &:visited {
+      color: $color-dk-gray;
       text-decoration: none;
     }
 
     &:hover,
     &:focus {
+      color: $color-body-gray;
       text-decoration: underline;
     }
 
-    &.active {
-      color: $color-link;
-      border-color: $color-link;
+    &.active,
+    &.is-active {
+      color: $color-rust;
+      border-color: $color-rust;
+    }
+  }
+}
+
+.main-menu--top {
+  padding: 0 1rem;
+
+  ul.links li {
+    float: left;
+    margin: 0 0.25rem 0 0;
+  }
+
+  ul.links li a {
+    border-left: none;
+    border-bottom: 0.25rem solid $color-dk-gray;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
+    padding: 0.25rem 1.25rem;
+
+    &:link,
+    &:visited {
+      color: $color-dk-gray;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-body-gray;
+      text-decoration: underline;
+    }
+
+    &.active,
+    &.is-active {
+      color: $color-rust;
+      border-color: $color-rust;
     }
   }
 }

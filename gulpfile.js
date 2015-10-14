@@ -1,21 +1,17 @@
 'use strict';
 
 //=======================================================
-// Include gulp
+// Gulp
 //=======================================================
 var gulp = require('gulp');
 
 //=======================================================
-// Include Our Plugins
+// Plugins
 //=======================================================
 var sass       = require('gulp-sass');
 var prefix     = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var filter     = require('gulp-filter');
-var shell      = require('gulp-shell');
-var q          = require('q');
-var path       = require('path');
-var fs         = require('fs');
 
 //=======================================================
 // Functions
@@ -50,11 +46,6 @@ gulp.task('sass', function() {
 //=======================================================
 
 gulp.task('watch', function() {
-
-  // BrowserSync proxy setup
-  //sync({
-  //    proxy: 'http://my-local-domain/'
-  //});
 
   // Watch all my sass files and compile sass if a file changes.
   gulp.watch('sass/{,**/}*.scss', ['sass']);

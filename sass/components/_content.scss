@@ -2,7 +2,7 @@
 
 .content {
   background-color: $color-white;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 2rem;
 }
 
 .content__container {
@@ -11,13 +11,13 @@
 }
 
 .content__main {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 .content__page-title {
   font-size: 2.5rem;
   margin: 0;
-  padding: 0.5rem 0 0 0;
+  padding: 0.5rem 0 1rem 0;
 
   .cts-skin-green-clovers & {
     color: $color-green-clovers;
@@ -30,8 +30,17 @@
   .cts-skin-purple-horseshoes & {
     color: $color-purple-horseshoes;
   }
+
+  @include breakpoint($bp-md) {
+    padding-bottom: 0;
+  }
 }
 
-.content__body-wrapper--menu-left {
-  margin-left: 22%;
+.content__body-wrapper--menu-sidebar {
+  @include breakpoint($bp-md) {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 1rem;
+    width: 85%;
+  }
 }

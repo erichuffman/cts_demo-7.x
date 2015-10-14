@@ -7,27 +7,36 @@
 }
 
 .header__mdc-logo {
-  background-image: url(../images/mdc-logo.png);
-  background-image: url(../images/mdc-logo.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  height: 0;
   margin: 0;
-  overflow: hidden;
-  padding: 6rem 0 0 0;
   width: 100%;
+
+  a {
+    background-image: url(../images/mdc-logo.png);
+    background-image: url(../images/mdc-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding: 6rem 0 0 0;
+    width: 100%;
+  }
 
   @include breakpoint($bp-md) {
     float: left;
-    padding-top: 8rem;
     width: 20%;
+
+    a {
+      padding-top: 8rem;
+    }
   }
 }
 
 .header__division-id,
 .header__territory-id {
-  color: $color-white;
+  color: $color-sub-heads;
+  font-family: $font-stack-secondary;
   font-weight: $font-weight-normal;
   text-align: center;
   line-height: 1.2;
@@ -42,7 +51,7 @@
   @include breakpoint($bp-md) {
     font-size: 2.25rem;
     margin: 0;
-    padding-top: 1.25rem;
+    padding-top: 1.5rem;
   }
 }
 

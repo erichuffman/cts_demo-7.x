@@ -1,9 +1,9 @@
 screenshot  = screenshot.png
-name = Custom Theme Settings Demo Theme
-description =  A theme for demonstrating how to configure some basic custom theme settings.
+name = Custom Theme Settings D7 Demo Theme
+description =  A theme for demonstrating how to configure some basic custom theme settings in Drupal 7.
 core = 7.x
 
-stylesheets[screen][] = css/cts-demo.main.base.css
+stylesheets[screen][] = css/cts-demo.main.css
 
 regions[help] = Help
 regions[content] = Main Content

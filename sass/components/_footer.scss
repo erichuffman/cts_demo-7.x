@@ -1,0 +1,13 @@
+// Styling specific to the footer
+
+.footer {
+  min-height: 3rem;
+}
+
+.footer__copyright {
+  color: $color-white;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}

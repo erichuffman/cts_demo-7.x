@@ -1,0 +1,38 @@
+// Styling for leprechaun logos
+
+.leprechaun--smiley,
+.leprechaun--surly,
+.leprechaun--tipsy {
+  box-sizing: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  padding: 1rem;
+  width: 220px;
+
+  @include breakpoint($bp-md) {
+    float: right;
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+.leprechaun--smiley {
+  background-image: url('../images/leprechaun-mascot-smiley.png');
+  background-image: url('../images/leprechaun-mascot-smiley.svg');
+}
+
+.leprechaun--surly {
+  background-image: url('../images/leprechaun-mascot-surly.png');
+  background-image: url('../images/leprechaun-mascot-surly.svg');
+}
+
+.leprechaun--tipsy {
+  background-image: url('../images/leprechaun-mascot-tipsy.png');
+  background-image: url('../images/leprechaun-mascot-tipsy.svg');
+
+  .main-menu-top & {
+    background-image: url('../images/leprechaun-mascot-tipsy-yak.png');
+    background-image: url('../images/leprechaun-mascot-tipsy-yak.svg');
+  }
+}

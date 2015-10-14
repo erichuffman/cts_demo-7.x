@@ -140,8 +140,8 @@ function cts_demo_form_system_theme_settings_alter(&$form, &$form_state) {
 function cts_demo_settings_validate($form, &$form_state) {
 
   // Check for a top menu selection along with a Surly leprechaun, and warn accordingly.
-  if (!empty($form_state['values']['leprechaun_mascot']) && $form_state['values']['main_menu_location'] == 0 && $form_state['values']['leprechaun_mascot_style'] == 'surly') {
-    drupal_set_message(t('Notice: Surly Leprechauns don\'t like menus hanging above their heads. You might consider keeping the menu to the left, or things might get ugly.'), 'warning');
+  if (!empty($form_state['values']['leprechaun_mascot']) && $form_state['values']['main_menu_location'] == 0 && $form_state['values']['leprechaun_mascot_style'] == 'tipsy') {
+    drupal_set_message(t('Notice: Placing a menu above a tipsy leprechaun may cause adverse effects. You might consider keeping the menu to the left, or things might get ugly.'), 'warning');
   }
 
 }

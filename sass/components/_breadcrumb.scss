@@ -1,4 +1,10 @@
 // Styling for the breadcrumb
+.breadcrumb__wrapper {
+  display: none;
+  @include breakpoint($bp-md) {
+    display: block;
+  }
+}
 
 .breadcrumb a {
   color: $color-dk-gray;
