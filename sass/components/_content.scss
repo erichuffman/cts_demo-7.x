@@ -44,3 +44,8 @@
     width: 85%;
   }
 }
+
+/* Hiding the annoying default "no front page content" message */
+#first-time {
+  display: none;
+}

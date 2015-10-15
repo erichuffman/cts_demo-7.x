@@ -394,6 +394,10 @@ img {
     padding-left: 1rem;
     width: 85%; } }
 
+/* Hiding the annoying default "no front page content" message */
+#first-time {
+  display: none; }
+
 .support__main-skip-link {
   position: absolute !important;
   height: 1px;
@@ -432,6 +436,28 @@ img {
   .main-menu-top .leprechaun--tipsy {
     background-image: url("../images/leprechaun-mascot-tipsy-yak.png");
     background-image: url("../images/leprechaun-mascot-tipsy-yak.svg"); }
+
+.language-switcher {
+  border-top: 1px solid #d1d1d1;
+  padding: 1rem; }
+
+ul.language-switcher-locale-url {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul.language-switcher-locale-url li {
+    display: inline;
+    margin: 0 1rem 0 0;
+    padding: 0; }
+  ul.language-switcher-locale-url a {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px; }
+  ul.language-switcher-locale-url a.active {
+    background-color: #d1d1d1; }
+  ul.language-switcher-locale-url img {
+    height: 20px;
+    width: 30px; }
 
 .footer {
   min-height: 3rem; }

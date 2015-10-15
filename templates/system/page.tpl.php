@@ -72,7 +72,13 @@
       <div class="content__main"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
-          <h2 class="content__page-title"><?php print $title; ?></h2>
+          <h2 class="content__page-title">
+            <?php if ($is_front) : ?>
+              <?php print $home_welcome_message; ?>
+            <?php else : ?>
+              <?php print $title; ?>
+            <?php endif; ?>
+          </h2>
         <?php endif; ?>
         <div class="breadcrumb__wrapper">
           <?php print $breadcrumb; ?>

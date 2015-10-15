@@ -28,7 +28,7 @@ $territory_options = array(
 
 // Leprechaun mascots
 $leprechaun_mascot_options = array(
-  'smiley' => t('Smiley McSmiles'),
-  'surly' => t('Surly O\'Crabby'),
-  'tipsy' => t('Tipsy McSauced'),
+  t('smiley') => t('Smiley McSmiles'),
+  t('surly') => t('Surly O\'Crabby'),
+  t('tipsy') => t('Tipsy McSauced'),
 );

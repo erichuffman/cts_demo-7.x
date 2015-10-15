@@ -31,6 +31,9 @@ function cts_demo_preprocess_html(&$variables, $hook) {
  */
 function cts_demo_preprocess_page(&$variables, $hook) {
 
+  // Set a translatable welcome message for the home page
+  $variables['home_welcome_message'] = t('Welcome to ' . $variables['site_name']);
+
   // Set a theme path variable
   $variables['cts_demo_theme_path'] = base_path() . drupal_get_path('theme', 'cts_demo');
 
@@ -45,16 +48,16 @@ function cts_demo_preprocess_page(&$variables, $hook) {
   $division_id = theme_get_setting('division_id');
   switch ($division_id) {
     case 0:
-      $variables['division_id'] = 'Divison of Leprechaun Arbitration';
+      $variables['division_id'] = t('Leprechaun Arbitration');
       break;
     case 1:
-      $variables['division_id'] = 'Divison of Sugar Procurement';
+      $variables['division_id'] = t('Sugar Procurement');
       break;
     case 2:
-      $variables['division_id'] = 'Divison of Marshmallow Engineering';
+      $variables['division_id'] = t('Marshmallow Engineering');
       break;
     default:
-      $variables['division_id'] = 'Divison of Leprechaun Arbitration';
+      $variables['division_id'] = t('Leprechaun Arbitration');
   }
 
   // Retrieve the Territory selection from the theme settings,
