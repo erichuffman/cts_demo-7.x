@@ -44,4 +44,4 @@ settings[main_menu_location] = 0
 settings[leprechaun_mascot] = 0
 settings[leprechaun_mascot_style] = Smiley McSmiles
 
-version = "7.x-1.0"
+version = "7.x-2.0"
